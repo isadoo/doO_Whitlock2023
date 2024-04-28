@@ -169,10 +169,7 @@ def make_mutation_plan_contrib(
 	#? at which positions do they occur?
 	entries = random.sample(range (1,( period*trait_n +1 )),poolsize);
 	entries.sort();
-	# //:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:/※
 	posns   = np.array([*map (lambda x: ((x%(trait_n**2))//trait_n,(x%(trait_n**2))%trait_n), entries)])
-	# //:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:∷∷∷∷:
-
 	return {
 		"posns" : posns,
 		"iterns": iterns
